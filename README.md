@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚗 **Car Dealer App** 🚗
 
-## Getting Started
+Welcome to **Car Dealer App**! This project is an application that allows you to view vehicle models from a specific manufacturer and year using the NHTSA (National Highway Traffic Safety Administration) API.
 
-First, run the development server:
+## 🛠️ **What Was Done**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **API Integration**: Implemented a call to the NHTSA API to fetch vehicle models based on the provided manufacturer and year.
+- **Model Listing**: Displayed vehicle models in an organized and styled list.
+- **Error Handling and Loading State**: Added messages to show loading states and errors, ensuring a better user experience.
+- **Responsive Design**: Used Tailwind CSS to create a clean and responsive interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 **What Was Implemented**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📜 **Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Model Search**: Allows searching for vehicle models by manufacturer and year.
+- **Data Display**: Lists the found models in an easy-to-read format.
+- **Error Handling**: Clear messages when no models are found or when there is an error with the request.
 
-## Learn More
+### 🧩 **Technologies and Tools Used**
 
-To learn more about Next.js, take a look at the following resources:
+- **React**: Main library for building the user interface.
+- **Tailwind CSS**: CSS framework for responsive styling.
+- **TypeScript**: Added for safer typing and more robust development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 **How to Run the Project**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the Repository**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install Dependencies**
+
+   Ensure you have Node.js installed. Then, run:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application**
+
+   After installing dependencies, start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the Browser**
+
+   Open your browser and go to http://localhost:3000 to see the application in action.
+
+## 📄 How to Use
+
+1. **Choose a Car** - Select a car from the dropdown menu.
+2. **Choose a Date** - Select a date from the dropdown menu.
+3. **Navigate to Result Page** - Click the "Next" button to navigate to the result page in the URL format, replace makeId and years with the desired values:
+
+   ```bash
+    http://localhost:3000/resultpage/{makeId}/{years}
+   ```
+
+   Example:
+
+   ```bash
+    http://localhost:3000/resultpage/460/2021
+   ```
+
+4. **View the Models**
+
+   The page will display a list of vehicle models available for the specified manufacturer and year.
