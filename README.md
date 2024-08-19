@@ -28,8 +28,8 @@ Welcome to **Car Dealer App**! This project is an application that allows you to
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/yoshi00/car-dealer-app.git
+   cd car-dealer-app
 
    ```
 
